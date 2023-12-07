@@ -10,8 +10,16 @@ create database AddressBook;
 --and email as its attributes
 use AddressBook;
 --Database changed
- create table AddressBook ( firstName varchar(25), lastName varchar(25), address varchar(50), city varchar(50), state varchar(50), zip char(6), phonenumber char(13), email varchar(25));
+create table AddressBook ( firstName varchar(25), lastName varchar(25), address varchar(50), city varchar(50), state varchar(50), zip char(6), phonenumber char(13), email varchar(25));
 --Query OK, 0 rows affected (0.04 sec)
+
+--UC 3
+--Ability to insert new Contacts to Address Book
+insert into AddressBook values ('Vaisakh', 'Krishnan', 'Kiliyattuveliyil', 'Alleppey', 'Kerala', '688003', '91 8129348583', 'tempmail@gmail.com');
+--Query OK, 1 row affected (0.05 sec)
+
+
+
 
 
 
