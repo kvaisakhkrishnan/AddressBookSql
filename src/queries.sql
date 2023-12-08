@@ -106,3 +106,14 @@ alter table AddressBook add Name varchar(25), add Type varchar(25);
 | Type        | varchar(25) | YES  |     | NULL    |       |
 +-------------+-------------+------+-----+---------+-------+
 
+--UC10
+--Ability to get number of contact persons
+select type, count(*) as size from AddressBook group by type;
++---------+------+
+| type    | size |
++---------+------+
+| Friends |    1 |
+| Home    |    2 |
++---------+------+
+
+
