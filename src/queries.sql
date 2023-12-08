@@ -88,4 +88,21 @@ select * from addressbook;
 | Vaisakh   | Krishnan | Kiliyattuveliyil | Alappuzha | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com |
 +-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
 
+--UC9
+--Ability to identify each Address Book with name and Type.
+alter table AddressBook add Name varchar(25), add Type varchar(25);
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| firstName   | varchar(25) | YES  |     | NULL    |       |
+| lastName    | varchar(25) | YES  |     | NULL    |       |
+| address     | varchar(50) | YES  |     | NULL    |       |
+| city        | varchar(50) | YES  |     | NULL    |       |
+| state       | varchar(50) | YES  |     | NULL    |       |
+| zip         | char(6)     | YES  |     | NULL    |       |
+| phonenumber | char(13)    | YES  |     | NULL    |       |
+| email       | varchar(25) | YES  |     | NULL    |       |
+| Name        | varchar(25) | YES  |     | NULL    |       |
+| Type        | varchar(25) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
 
