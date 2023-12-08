@@ -77,3 +77,15 @@ select * from addressbook;
 | Kerala |    1 |
 +--------+------+
 
+--UC8
+--Ability to retrieve entries sorted alphabetically by Person’s name for a given city
+
+ select * from AddressBook where city = 'Alappuzha' order by firstName ;
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+| firstName | lastName | address          | city      | state  | zip    | phonenumber   | email              |
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+| Firstname | Lastname | Kiliyattuveliyil | Alappuzha | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com |
+| Vaisakh   | Krishnan | Kiliyattuveliyil | Alappuzha | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com |
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+
+
