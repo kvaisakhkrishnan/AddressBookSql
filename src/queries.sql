@@ -116,4 +116,19 @@ select type, count(*) as size from AddressBook group by type;
 | Home    |    2 |
 +---------+------+
 
+--UC11
+--Ability to add person to both Friend and Family
+insert into AddressBook values ('PersonName', 'Lastname', 'Kiliyattuveliyil', 'Alleppey', 'Kerala', '688003', '91 8129348583', 'tempmail@gmail.com', 'Book1', 'Family');
+insert into AddressBook values ('PersonName', 'Lastname', 'Kiliyattuveliyil', 'Alleppey', 'Kerala', '688003', '91 8129348583', 'tempmail@gmail.com', 'Book1', 'Friend');
+select * from AddressBook;
++------------+----------+------------------+-----------+--------+--------+---------------+--------------------+--------+---------+
+| firstName  | lastName | address          | city      | state  | zip    | phonenumber   | email              | Name   | Type    |
++------------+----------+------------------+-----------+--------+--------+---------------+--------------------+--------+---------+
+| Vaisakh    | Krishnan | Kiliyattuveliyil | Alappuzha | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com | Book 2 | Friends |
+| Firstname  | Lastname | Kiliyattuveliyil | Alleppey  | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com | Book 1 | Home    |
+| Firstname  | Lastname | Kiliyattuveliyil | Alappuzha | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com | Book 1 | Home    |
+| PersonName | Lastname | Kiliyattuveliyil | Alleppey  | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com | Book1  | Family  |
+| PersonName | Lastname | Kiliyattuveliyil | Alleppey  | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com | Book1  | Friend  |
++------------+----------+------------------+-----------+--------+--------+---------------+--------------------+--------+---------+
+
 
