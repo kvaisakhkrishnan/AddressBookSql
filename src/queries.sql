@@ -32,3 +32,21 @@ insert into AddressBook values ('Vaisakh', 'Krishnan', 'Kiliyattuveliyil', 'Alle
 +-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
 
 
+--UC5
+--Ability to delete a person using person's name
+insert into AddressBook values ('Firstname', 'Lastname', 'Kiliyattuveliyil', 'Alleppey', 'Kerala', '688003', '91 8129348583', 'tempmail@gmail.com');
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+| firstName | lastName | address          | city      | state  | zip    | phonenumber   | email              |
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+| Vaisakh   | Krishnan | Kiliyattuveliyil | Alappuzha | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com |
+| Firstname | Lastname | Kiliyattuveliyil | Alleppey  | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com |
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+delete from AddressBook where firstName = 'Firstname';
+Query OK, 1 row affected (0.00 sec)
+select * from addressbook;
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+| firstName | lastName | address          | city      | state  | zip    | phonenumber   | email              |
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+| Vaisakh   | Krishnan | Kiliyattuveliyil | Alappuzha | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com |
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+
