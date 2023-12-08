@@ -59,3 +59,21 @@ select * from addressbook;
 +-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
 | Vaisakh   | Krishnan | Kiliyattuveliyil | Alappuzha | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com |
 +-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+
+
+--UC7
+--Ability to understand the size of address book by City and State
+ select city, count(*) as size from AddressBook group by city;
++-----------+------+
+| city      | size |
++-----------+------+
+| Alappuzha |    1 |
++-----------+------+
+
+ select state, count(*) as size from AddressBook group by state;
++--------+------+
+| state  | size |
++--------+------+
+| Kerala |    1 |
++--------+------+
+
