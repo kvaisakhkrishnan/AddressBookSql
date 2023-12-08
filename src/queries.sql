@@ -50,3 +50,12 @@ select * from addressbook;
 | Vaisakh   | Krishnan | Kiliyattuveliyil | Alappuzha | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com |
 +-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
 
+
+--UC6
+--Ability to Retrieve Person belonging to a City or State from the Address Book
+ select * from AddressBook where city = 'Alappuzha' or state = 'Kerala';
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+| firstName | lastName | address          | city      | state  | zip    | phonenumber   | email              |
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
+| Vaisakh   | Krishnan | Kiliyattuveliyil | Alappuzha | Kerala | 688003 | 91 8129348583 | tempmail@gmail.com |
++-----------+----------+------------------+-----------+--------+--------+---------------+--------------------+
